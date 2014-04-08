@@ -1,4 +1,4 @@
-pilotweb-js
+chrome event experiments
 ===========
 
-Pilotweb chrome extension
+event pages in chrome extension
