@@ -19,7 +19,15 @@ chrome.alarms.onAlarm.addListener(function(alarm) {
         iconUrl: "icon.png"},
         function() { console.log("Created notification")}
                                );
+    var req = $.get("http://alerts.weather.gov/cap/mo.php?x=0",
+                null,
+                function(data, textStatus, jqXHR){
+                    console.log(textStatus);
+                    console.log($(data));
+                    $("entry",data).each(function( index, elem){
+                        console.log($("title", elem).html());
+                    });
+                });
 });
 console.log("What's up");
-
 

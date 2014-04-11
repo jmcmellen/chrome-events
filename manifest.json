@@ -16,6 +16,7 @@
   "permissions": [
     "alarms",
     "notifications",
-    "https://pilotweb.nas.faa.gov/"
+    "storage",
+    "http://alerts.weather.gov/*"
   ]
 }
